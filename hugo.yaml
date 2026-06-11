@@ -101,7 +101,7 @@ params:
   about:
     enable: true
     title: "Sobre mí"
-    image: "images/me.jpg"
+    image: "images/me.png"
     content: |-
       Enfermero colegiado con más de 15 años de experiencia en diversos ámbitos sanitarios, incluyendo
       emergencias, salud laboral, atención a personas mayores y tratamiento de adicciones. Capacidad
