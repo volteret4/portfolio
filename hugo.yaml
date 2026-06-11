@@ -1,0 +1,402 @@
+baseURL: "https://volteret4.github.io/portfolio/"
+locale: "es-ES"
+title: "Pablo Suárez Mula"
+theme: hugo-profile
+
+defaultContentLanguage: "es"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+publishDir: "docs"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menus:
+  main:
+    - identifier: proyectos
+      name: Proyectos
+      title: Proyectos
+      url: /#projects
+      weight: 1
+
+params:
+  title: "Pablo Suárez Mula"
+  description: "Enfermero, tecnólogo y aficionado a la música"
+  favicon: "/images/favicon.png"
+
+  useBootstrapCDN: false
+  animate: true
+
+  theme:
+    defaultTheme: "dark"
+
+  color:
+    primaryColor: "#7c3aed"
+    secondaryBackgroundColor: "#3b1a6b1a"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Pablo Suárez"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hola, soy"
+    title: "Pablo Suárez Mula."
+    subtitle: "Enfermero | Tecnólogo | Músico"
+    content: |-
+      Diplomado Universitario en Enfermería con más de 15 años de experiencia en emergencias, salud laboral,
+      drogodependencias y geriatría. Además, desarrollo herramientas y scripts para automatizar la vida cotidiana,
+      especialmente todo lo relacionado con la música.
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Currículum Vitae"
+      url: "/cv2025.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/volteret4
+        - icon: fa fa-envelope
+          url: mailto:pablosumu@protonmail.com
+
+  # About
+  about:
+    enable: true
+    title: "Sobre mí"
+    image: "/images/me.jpg"
+    content: |-
+      Enfermero colegiado con más de 15 años de experiencia en diversos ámbitos sanitarios, incluyendo
+      emergencias, salud laboral, atención a personas mayores y tratamiento de adicciones. Capacidad
+      demostrada para la coordinación de equipos y la gestión eficiente de recursos en entornos de alta presión.
+
+      Formación complementaria en intervención psicoterapéutica, lo que aporta un enfoque integral en el
+      cuidado de pacientes.
+
+      Fuera del ámbito sanitario, soy un entusiasta de la tecnología: automatizo flujos de trabajo con Python
+      y scripts de shell, y construyo herramientas para gestionar y disfrutar de la música.
+    skills:
+      enable: true
+      title: "Tecnologías y herramientas:"
+      items:
+        - "Python"
+        - "Shell / Bash"
+        - "Docker"
+        - "JavaScript"
+        - "Kotlin"
+        - "Hugo"
+        - "Linux"
+        - "Git"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Experiencia Profesional"
+    items:
+      - company: "PREVING"
+        companyUrl: "https://www.preving.com"
+        jobs:
+          - name: "D.U.E. en Prevención de Riesgos Laborales / Coordinador Sanitario"
+            date: "Julio 2021 – Abril 2024"
+            content: |-
+              - Realización de reconocimientos médicos laborales
+              - Vigilancia de la salud de trabajadores
+              - Gestión de historias clínicas y elaboración de informes
+              - Implementación de protocolos sanitarios según riesgos laborales
+
+      - company: "Cadiz 2000"
+        jobs:
+          - name: "Coordinador Sanitario de Playas"
+            date: "Marzo 2021 – Julio 2021"
+            content: |-
+              - Coordinación y supervisión de puestos sanitarios en las playas de Cádiz
+              - Gestión de recursos humanos y materiales
+              - Organización de turnos y guardias
+              - Elaboración de protocolos de actuación en emergencias
+          - name: "D.U.E. en Emergencias Sanitarias"
+            date: "Veranos 2019 – 2021"
+            content: |-
+              - Atención sanitaria de urgencia en playas
+              - Primeros auxilios en entorno acuático
+              - Coordinación con servicios de emergencia
+              - Educación sanitaria a usuarios de playas
+
+      - company: "Proyecto Hombre"
+        jobs:
+          - name: "D.U.E. en Atención a Drogodependencias"
+            date: "Septiembre 2013 – Marzo 2019"
+            content: |-
+              - Atención integral a personas con problemas de adicción
+              - Trabajo en Centro de Atención Integral a Dependientes
+              - Servicio en Albergue nocturno de baja exigencia Fucar
+              - Seguimiento de tratamientos y administración de medicación
+
+      - company: "Residencial Nogales XXI"
+        jobs:
+          - name: "D.U.E. en Geriatría"
+            date: "Septiembre 2011 – Septiembre 2013"
+            content: |-
+              - Atención sanitaria a personas mayores
+              - Control y seguimiento de patologías crónicas
+              - Administración de tratamientos
+              - Coordinación con equipo multidisciplinar
+
+      - company: "Asociación Punto Omega"
+        jobs:
+          - name: "D.U.E. en Tratamiento de Adicciones"
+            date: "Mayo 2010 – Enero 2011"
+            content: |-
+              - Trabajo en Centro de Deshabituación Aluche
+              - Seguimiento sanitario de procesos de desintoxicación
+              - Educación para la salud y prevención de recaídas
+
+      - company: "Fundación Atenea Grupo GID"
+        jobs:
+          - name: "D.U.E. en Reducción de Daños"
+            date: "Febrero 2008 – Diciembre 2010"
+            content: |-
+              - Atención en Dispositivos de Reducción del Daño en Valdemingómez y Barranquillas
+              - Prevención de enfermedades infecciosas
+              - Educación para la salud
+              - Intervención en crisis
+
+  # Education
+  education:
+    enable: true
+    title: "Formación Académica"
+    index: false
+    items:
+      - title: "Diplomado Universitario en Enfermería"
+        school:
+          name: "Universidad de Cádiz, Jerez de la Frontera"
+          url: "https://www.uca.es"
+        date: "2004 – 2007"
+        content: ""
+
+      - title: "Especialista en Intervención Psicoterapéutica"
+        school:
+          name: "UNED"
+          url: "https://www.uned.es"
+        date: "2009 – 2011"
+        content: ""
+
+      - title: "Formador a Distancia (80h)"
+        school:
+          name: "Instituto Abierto de Formación Interactiva"
+        date: "Junio 2008"
+        content: ""
+
+      - title: "Animador Sociocultural (300h)"
+        school:
+          name: "Jesús María"
+        date: "2006 – 2007"
+        content: ""
+
+  # Projects
+  projects:
+    enable: true
+    title: "Proyectos"
+    items:
+      - title: "Bot de Conciertos"
+        content: |-
+          Bot en Python que rastrea y notifica conciertos en tu ciudad. Integra múltiples fuentes
+          de eventos musicales y envía alertas personalizadas según artistas favoritos.
+        image: /images/projects/bot_conciertos.png
+        featured:
+          name: GitHub
+          link: https://github.com/volteret4/bot_conciertos
+        badges:
+          - "Python"
+          - "Bot"
+          - "Música"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/bot_conciertos
+
+      - title: "Bot Info Music"
+        content: |-
+          Bot de información musical que recopila datos sobre artistas, álbumes y canciones
+          desde múltiples APIs. Actualizado activamente con nuevas fuentes y funcionalidades.
+        image: /images/projects/bot_infomusic.png
+        featured:
+          name: GitHub
+          link: https://github.com/volteret4/bot_infomusic
+        badges:
+          - "Python"
+          - "API"
+          - "Música"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/bot_infomusic
+
+      - title: "Escuchowsky"
+        content: |-
+          Aplicación web en JavaScript para explorar y descubrir música. Interfaz visual para
+          gestionar y reproducir tu biblioteca musical personal.
+        image: /images/projects/escuchowsky.png
+        featured:
+          name: Demo
+          link: https://volteret4.github.io/escuchowsky/
+        badges:
+          - "JavaScript"
+          - "Web"
+          - "Música"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/escuchowsky
+
+      - title: "Wallabag RSS TTS"
+        content: |-
+          Sistema Docker completo que convierte artículos de Wallabag y feeds de FreshRSS a MP3
+          mediante síntesis de voz, generando un feed RSS personal consumible desde AntennaPod.
+        image: /images/projects/wallabag_rss_tts.png
+        featured:
+          name: GitHub
+          link: https://github.com/volteret4/wallabag_rss_tts
+        badges:
+          - "Python"
+          - "Docker"
+          - "TTS"
+          - "RSS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/wallabag_rss_tts
+
+      - title: "Second Brain Planificator"
+        content: |-
+          Herramienta en Python para organizar y planificar un "segundo cerebro" personal.
+          Integra notas, tareas y agenda en un flujo de trabajo unificado.
+        image: /images/projects/second_brain.png
+        featured:
+          name: GitHub
+          link: https://github.com/volteret4/second_brain_planificator
+        badges:
+          - "Python"
+          - "Productividad"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/second_brain_planificator
+
+      - title: "Discogs Scrobbler"
+        content: |-
+          App Android en Kotlin que registra tus escuchas de Discogs en Last.fm automáticamente.
+          Permite hacer scrobbling de discos físicos a tu perfil de Last.fm.
+        image: /images/projects/discogs_scrobbler.png
+        featured:
+          name: GitHub
+          link: https://github.com/volteret4/discogs-scrobbler
+        badges:
+          - "Kotlin"
+          - "Android"
+          - "Last.fm"
+          - "Discogs"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/discogs-scrobbler
+
+      - title: "Scripts"
+        content: |-
+          Colección de scripts de automatización para Linux con hotkeys propios. Incluye integraciones
+          con dmenu/rofi, utilidades Android, gestión de dotfiles y herramientas de música.
+        image: /images/projects/scripts.png
+        featured:
+          name: GitHub
+          link: https://github.com/volteret4/Scripts
+        badges:
+          - "Shell"
+          - "Python"
+          - "Linux"
+          - "dmenu/rofi"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/Scripts
+
+      - title: "VVMM"
+        content: |-
+          Blog/diario musical personal en HTML. Registro de escuchas, reseñas y reflexiones
+          sobre música con publicación directa desde scripts.
+        image: /images/projects/vvmm.png
+        featured:
+          name: Demo
+          link: https://volteret4.github.io/vvmm/
+        badges:
+          - "HTML"
+          - "Hugo"
+          - "Música"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/vvmm
+
+  # Contact
+  contact:
+    enable: true
+    title: "Contacto"
+    content: |-
+      Si quieres ponerte en contacto, ya sea para proyectos profesionales o cualquier consulta,
+      no dudes en escribirme.
+    btnName: "Enviar email"
+    btnLink: mailto:pablosumu@protonmail.com
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: https://github.com/volteret4
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: false
+    readTime:
+      enable: true
+      content: "min de lectura"
+    scrollprogress:
+      enable: true
+
+  terms:
+    read: "Leer"
+    toc: "Índice"
+    copyright: "Todos los derechos reservados"
+
+  datesFormat:
+    article: "2 Jan, 2006"
+    articleList: "2 Jan, 2006"
+    articleRecent: "2 Jan, 2006"
