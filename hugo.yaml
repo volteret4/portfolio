@@ -266,14 +266,40 @@ params:
           - icon: fab fa-github
             url: https://github.com/volteret4/bot_infomusic
 
+      - title: "Ensayos Musicales"
+        content: |-
+          Editor musical con base de datos de artistas y álbumes. Permite documentar y gestionar
+          una colección musical con información detallada sobre discografías y valoraciones.
+        image: /images/projects/editor.png
+        featured:
+          name: GitHub
+          link: https://github.com/volteret4/ensayos-musicales
+        badges:
+          - "Python"
+          - "Música"
+          - "Base de datos"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/ensayos-musicales
+
+      - title: "Orpheus Charts"
+        content: |-
+          Visor de charts musicales con foco en colección física de alta fidelidad (SACD, DVD-A, Blu-ray).
+          Interfaz visual con carátulas, listas personalizadas y reproductor integrado.
+        image: /images/projects/chart.png
+        badges:
+          - "Música"
+          - "Hi-Fi"
+          - "Charts"
+
       - title: "Escuchowsky"
         content: |-
           Aplicación web en JavaScript para explorar y descubrir música. Interfaz visual para
           gestionar y reproducir tu biblioteca musical personal.
         image: /images/projects/escuchowsky.png
         featured:
-          name: Demo
-          link: https://volteret4.github.io/escuchowsky/
+          name: GitHub
+          link: https://github.com/volteret4/escuchowsky
         badges:
           - "JavaScript"
           - "Web"
@@ -363,6 +389,49 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/volteret4/vvmm
+
+      - title: "Bandcamp IMAP"
+        content: |-
+          Interfaz web para gestionar y visualizar tu colección de Bandcamp organizada por géneros
+          y sellos. Sincronización de colección con estadísticas y navegación por álbumes.
+        image: /images/projects/bandcamp_imap.png
+        featured:
+          name: GitHub
+          link: https://github.com/volteret4/bancamp_imap
+        badges:
+          - "Python"
+          - "Bandcamp"
+          - "Música"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/bancamp_imap
+
+      - title: "FreshRSS Embeds"
+        content: |-
+          Dashboard que extrae y centraliza todos los embeds musicales (Bandcamp, YouTube, SoundCloud)
+          presentes en tus feeds de FreshRSS, con estadísticas y navegación por fuente.
+        image: /images/projects/freshrss_embeeds.png
+        featured:
+          name: GitHub
+          link: https://github.com/volteret4/freshrss_embeeds
+        badges:
+          - "Python"
+          - "RSS"
+          - "FreshRSS"
+          - "Música"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/volteret4/freshrss_embeeds
+
+      - title: "Trasvase Moode/LiDAR"
+        content: |-
+          Gestor de colección musical estilo terminal. Permite organizar, filtrar y transferir
+          tu biblioteca entre sistemas (Moode Audio, LiDAR) con una interfaz minimalista.
+        image: /images/projects/trasvase.png
+        badges:
+          - "Python"
+          - "Música"
+          - "Linux"
 
   # Contact
   contact:
